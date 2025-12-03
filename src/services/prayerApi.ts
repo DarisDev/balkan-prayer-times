@@ -13,8 +13,7 @@ export async function getPrayerTimes(
   const params = new URLSearchParams({
     latitude: latitude.toString(),
     longitude: longitude.toString(),
-    method: '3', // Muslim World League
-    school: '1', // Hanafi
+    method: '13', // Diyanet İşleri Başkanlığı, Turkey - used in Balkans region
   });
   
   const response = await fetch(`${API_BASE}/timings/${dateStr}?${params}`);
