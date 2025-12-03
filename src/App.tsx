@@ -49,7 +49,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/balkan-prayer-times">
         <AppContent />
       </BrowserRouter>
     </TooltipProvider>
