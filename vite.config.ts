@@ -6,6 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/balkan-prayer-times/",
   server: {
     host: "::",
     port: 8080,
@@ -24,8 +25,8 @@ export default defineConfig(({ mode }) => ({
         background_color: "#faf9f5",
         display: "standalone",
         orientation: "portrait",
-        scope: "/",
-        start_url: "/",
+        scope: "/balkan-prayer-times/",
+        start_url: "/balkan-prayer-times/",
         icons: [
           {
             src: "/pwa-192x192.png",
